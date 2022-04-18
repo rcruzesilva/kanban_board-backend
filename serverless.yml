@@ -70,12 +70,12 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
+  createAccount:
+    handler: src/modules/user/controller.createAccount
     events:
     - http:
-        path: hello
-        method: get
+        path: user/create
+        method: post
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
